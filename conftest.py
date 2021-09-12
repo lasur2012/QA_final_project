@@ -16,6 +16,7 @@ def language(request):
 @pytest.fixture()
 def browser(language):
     options = Options()
+    options.headless = True
     options.add_experimental_option('prefs', {'intl.accept_languages': language})
     browser = webdriver.Chrome(options=options)
     yield browser

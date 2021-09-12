@@ -13,3 +13,8 @@ class ProductPageLocators:
     BASKET_VALUE = (By.CLASS_NAME, 'basket-mini')
     BOOK_NAME = (By.CSS_SELECTOR, '.product_main > h1')
     BASKET_BOOK = (By.CSS_SELECTOR, '#messages > div:nth-child(1) > .alertinner > strong')
+    SUCCESS_MESSAGE = (By.CLASS_NAME, 'alert-success')
+
+class BasePageLocators:
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
